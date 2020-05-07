@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>DSC_0121.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\DSC_0121.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>1617B87D56F5164731E22AE1F20D52258782EC56</ManifestCertificateThumbprint>
@@ -131,7 +131,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DSC_0121.ico" />
+    <Content Include="Resources\DSC_0121.ico" />
     <None Include="Resources\DSC_0121.jpg" />
     <None Include="Resources\Chip8keypad.png" />
   </ItemGroup>
