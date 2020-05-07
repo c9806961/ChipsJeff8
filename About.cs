@@ -31,5 +31,10 @@ namespace ChipsJeff8
         {
             System.Diagnostics.Process.Start("https://www.zophar.net/pdroms/chip8.html");
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/c9806961/ChipsJeff8");
+        }
     }
 }
