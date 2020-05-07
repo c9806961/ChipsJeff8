@@ -94,24 +94,27 @@ namespace ChipsJeff8
         }
         public bool WriteSaveSate(string fileName)
         {
+ 
             try
             {
                 using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create)))
                 {
                     writer.Write((ushort)I);
-                    foreach (byte b in V)
-                        writer.Write(b);
+                    Console.WriteLine("I " + I);
+                    for (int b = 0; b < V.Length; b++)
+                        writer.Write(V[b]);
                     writer.Write(DT);
                     writer.Write(ST);
                     writer.Write((ushort)PC);
-                    foreach (byte b in stack)
-                        writer.Write((ushort)b);
+                    for (int b = 0; b < stack.Length; b++)
+                        writer.Write((ushort)stack[b]);
                     writer.Write(SP);
-                    foreach (byte b in ram)
-                        writer.Write(b);
+                    for (int b = 0; b < ram.Length; b++)
+                        writer.Write(ram[b]);
                     for (int i = 0; i < screenHeight; i++)
                         for (int j = 0; j < screenWidth; j++)
                             writer.Write(screenBuff[i, j]);
+                    writer.Close();
                 }
             }
             catch (IOException)

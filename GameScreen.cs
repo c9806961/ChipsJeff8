@@ -125,15 +125,14 @@ namespace ChipsJeff8
             // create CPU
             paused = false;
             speedPauseItem.Text = "Pause";
-            saveStateSaveItem.Enabled = true;
             cpu = new Chip8CPU();
-            Console.WriteLine("Emulator started.");
             // Loadrom and run CPU
             if (loadStatePending)
             {
                 loadStatePending = false;
                 if (cpu.LoadSaveState(saveStateFilename))
                 {
+                    cpu.needsRedraw = true;
                     gameTask = Task.Run(GameLoop);
                 }
             }
@@ -197,7 +196,6 @@ namespace ChipsJeff8
             myBuffer.Dispose();
             cpu.needsRedraw = false;
         }
-        //private delegate void SafeCallDelegate();
         private void GameLoop()
         {
             running = true;
