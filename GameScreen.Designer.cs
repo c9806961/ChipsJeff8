@@ -200,21 +200,21 @@
             this.saveStateSaveItem,
             this.saveStateLoadItem});
             this.saveStateToolStripMenuItem.Name = "saveStateToolStripMenuItem";
-            this.saveStateToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.saveStateToolStripMenuItem.Text = "Save state";
+            this.saveStateToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.saveStateToolStripMenuItem.Text = "Savestate";
             // 
             // saveStateSaveItem
             // 
             this.saveStateSaveItem.Name = "saveStateSaveItem";
             this.saveStateSaveItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
-            this.saveStateSaveItem.Size = new System.Drawing.Size(119, 22);
+            this.saveStateSaveItem.Size = new System.Drawing.Size(180, 22);
             this.saveStateSaveItem.Text = "Save";
             // 
             // saveStateLoadItem
             // 
             this.saveStateLoadItem.Name = "saveStateLoadItem";
             this.saveStateLoadItem.ShortcutKeys = System.Windows.Forms.Keys.F9;
-            this.saveStateLoadItem.Size = new System.Drawing.Size(119, 22);
+            this.saveStateLoadItem.Size = new System.Drawing.Size(180, 22);
             this.saveStateLoadItem.Text = "Load";
             // 
             // helpMenu
